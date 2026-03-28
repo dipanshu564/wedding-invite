@@ -879,10 +879,10 @@ const App = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
-                { name: "Mehndi", date: "April 19, 2026", time: "4:00 PM", venue: "Silaudi" },
-                { name: "Haldi", date: "April 20, 2026", time: "7:00 PM", venue: "Silaudi" },
-                { name: "Sangeet", date: "April 20, 2026", time: "7:00 PM", venue: "Silaudi" },
-                { name: "Wedding", date: "April 21, 2026", time: "8:00 PM", venue: "Agra" }
+                { name: "Mehndi", date: "April 19, 2026", time: "4:00 PM", venue: "Silaundi" },
+                { name: "Haldi", date: "April 20, 2026", time: "7:00 PM", venue: "Silaundi" },
+                { name: "Sangeet", date: "April 20, 2026", time: "7:00 PM", venue: "Silaundi" },
+                { name: "Wedding", date: "April 21, 2026", time: "8:00 PM", venue: "Mainpuri, Agra" }
               ].map((event, i) => (
                 <ThreeDCard key={i} className="w-full">
                   <div className="glass-card p-8 rounded-2xl text-center border-gold-metallic/20 shine-sweep group h-full">
