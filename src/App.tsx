@@ -793,7 +793,7 @@ const App = () => {
                   <div className="relative w-48 h-48 mx-auto mb-8 rounded-full overflow-hidden border-2 border-gold-metallic/30 p-2">
                     <div className="absolute inset-0 bg-gold-metallic/10 animate-pulse" />
                     <img 
-                      src="https://picsum.photos/seed/groom/400/400" 
+                      src="/images/Himanshu.jpg.jpeg" 
                       alt="Himanshu" 
                       className="w-full h-full object-cover rounded-full grayscale hover:grayscale-0 transition-all duration-700"
                       referrerPolicy="no-referrer"
@@ -812,9 +812,9 @@ const App = () => {
                   <div className="relative w-48 h-48 mx-auto mb-8 rounded-full overflow-hidden border-2 border-gold-metallic/30 p-2">
                     <div className="absolute inset-0 bg-gold-metallic/10 animate-pulse" />
                     <img 
-                      src="https://picsum.photos/seed/bride/400/400" 
+                      src="/images/Akanksha.jpg.jpeg" 
                       alt="Akanksha" 
-                      className="w-full h-full object-cover rounded-full grayscale hover:grayscale-0 transition-all duration-700"
+                      className="w-full h-full object-contain rounded-full grayscale hover:grayscale-0 transition-all duration-700"
                       referrerPolicy="no-referrer"
                     />
                   </div>
@@ -939,9 +939,18 @@ const App = () => {
             <SectionHeading title="Our Moments" subtitle="Captured Memories" />
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 perspective-1000">
-              {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
+              {[
+                "/images/Akanksha.jpg.jpeg",
+                "/images/Himanshu.jpg.jpeg", 
+                "/images/Rajan_dada_3.jpeg",
+                "/images/Rajan_data_4.jpeg",
+                "/images/WhatsApp_Image_2026-03-28_at_11.42.25_AM_1.jpeg",
+                "/images/Akanksha.jpg.jpeg",
+                "/images/Himanshu.jpg.jpeg",
+                "/images/Rajan_dada_3.jpeg"
+              ].map((imageSrc, index) => (
                 <motion.div
-                  key={item}
+                  key={index}
                   whileHover={{ rotateY: 180 }}
                   transition={{ duration: 0.8 }}
                   className="relative aspect-square rounded-2xl cursor-pointer group"
@@ -950,9 +959,9 @@ const App = () => {
                   {/* Front */}
                   <div className="absolute inset-0 backface-hidden rounded-2xl overflow-hidden border border-gold-metallic/10">
                     <img 
-                      src={`https://picsum.photos/seed/wedding-${item}/600/600`} 
-                      alt={`Gallery ${item}`}
-                      className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                      src={imageSrc} 
+                      alt={`Gallery ${index + 1}`}
+                      className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-700"
                       referrerPolicy="no-referrer"
                     />
                   </div>
